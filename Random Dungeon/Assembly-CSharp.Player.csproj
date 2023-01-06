@@ -56,13 +56,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ReSourcesL.cs" />
+    <Compile Include="Assets\Scripts\MyTimer.cs" />
     <Compile Include="Assets\Scripts\DungeonGenerator.cs" />
+    <Compile Include="Assets\Scripts\Tester.cs" />
     <Compile Include="Assets\Scripts\DungeonRoom.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />
+    <Compile Include="Assets\Scripts\Loader.cs" />
     <Compile Include="Assets\Scripts\RoomTile.cs" />
     <Compile Include="Assets\Scripts\DungeonTile.cs" />
-    <Compile Include="Assets\Scripts\Loader.cs" />
-    <Compile Include="Assets\Scripts\Tester.cs" />
+    <Compile Include="Assets\Scripts\GridManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Sprite\dungeon\tiles\wall\obs.txt" />

@@ -38,9 +38,9 @@ public class DungeonRoom
                 result.GetComponent<RoomTile>().belongToRoom = this;
                 result.GetComponent<RoomTile>().Index = new Vector2(i,j);
                 result.transform.SetParent(parent);
-                grids[i, j] = new Grid();
-                grids[i, j].Pos = startPos+ new Vector3(i * distance, j * distance, 0);
-                grids[i, j].prefab = result;
+               // grids[i, j] = new Grid();
+                //grids[i, j].Pos = startPos+ new Vector3(i * distance, j * distance, 0);
+                //grids[i, j].prefab = result;
             }
         }
 
@@ -101,11 +101,12 @@ public class DungeonRoom
             GenerateWall(parent.transform.position);
         }
     }
-    public void RoomRandomInit(Transform parent)
+    public void RoomRandomInit(string parentName)
     {
         size.x = (int)Random.Range(5,10);
         size.y = (int)Random.Range(5,10);
-        this.parent = parent;
+        this.parent = new GameObject().transform;
+        this.parent.name = parentName;
         grids = new Grid[(int)size.x, (int)size.y];
         Load();
         //floor = ReSourcesL.LoadPrefabByPath("Floors/floor_1");
@@ -120,13 +121,19 @@ public class DungeonRoom
             GenerateWall(parent.transform.position);
         }
     }
-    async public void Load()
+    public void Load()
     {
-        floor = ReSourcesL.LoadPrefabByPath("Floors/floor_1");
-        wall = ReSourcesL.LoadPrefabByPath("Walls/wall_1");
-        topWall = ReSourcesL.LoadPrefabByPath("Walls/wall_top");
-        bottomWall = ReSourcesL.LoadPrefabByPath("Walls/wall_bottom");
-        leftWall = ReSourcesL.LoadPrefabByPath("Walls/wall_top_left");
-        rightWall = ReSourcesL.LoadPrefabByPath("Walls/wall_top_right");
+        //floor = ReSourcesL.LoadPrefabByPath("Floors/floor_1");
+        //wall = ReSourcesL.LoadPrefabByPath("Walls/wall_1");
+        //topWall = ReSourcesL.LoadPrefabByPath("Walls/wall_top");
+        //bottomWall = ReSourcesL.LoadPrefabByPath("Walls/wall_bottom");
+        //leftWall = ReSourcesL.LoadPrefabByPath("Walls/wall_top_left");
+        //rightWall = ReSourcesL.LoadPrefabByPath("Walls/wall_top_right");
+        floor = ReSourcesL._ins.Floors.PrefabList[0];
+        wall = ReSourcesL._ins.Walls.PrefabList[0];
+        topWall = ReSourcesL._ins.Walls.PrefabList[9];
+        bottomWall = ReSourcesL._ins.Walls.PrefabList[3];
+        leftWall = ReSourcesL._ins.Walls.PrefabList[12];
+        rightWall = ReSourcesL._ins.Walls.PrefabList[13];
     }
 }

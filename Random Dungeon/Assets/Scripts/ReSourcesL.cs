@@ -8,9 +8,11 @@ using UnityEngine;
 /// </summary>
 public class ReSourcesL : MonoBehaviour
 {
-    public GameObject[] floors;
-    public Loader F;
+    //public GameObject[] floors;
+    public Loader Floors;
     public string FloorsLoaderPath = "Loaders/FloorsLoader";
+    public Loader Walls;
+    public string WallsLoaderPath = "Loaders/WallsLoader";
     public static ReSourcesL _ins;
     private void Awake()
     {
@@ -26,17 +28,14 @@ public class ReSourcesL : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LoadAsyncRes<Loader>(FloorsLoaderPath,(rrq)=> { this.F = rrq.asset as Loader; Debug.Log("加载完成！"); });
+        LoadAsyncRes<Loader>(FloorsLoaderPath,(rrq)=> { this.Floors = rrq.asset as Loader; Debug.Log("加载完成！"); });
+        LoadAsyncRes<Loader>(WallsLoaderPath, (rrq) => { this.Walls = rrq.asset as Loader;Debug.Log("加载完成！"); });
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-    public GameObject[] GetFloors()
-    {
-        return floors;
     }
     public static GameObject[] LoadFloors()
     {
