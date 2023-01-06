@@ -2,17 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grid : MonoBehaviour
+public enum GridState
 {
-    // Start is called before the first frame update
-    void Start()
+    /// <summary>
+    /// 被占据
+    /// </summary>
+    Occupied,
+    /// <summary>
+    /// 未被占据
+    /// </summary>
+    NoOccupied
+}
+/// <summary>
+/// 网格
+/// </summary>
+public class Grid
+{
+    public Vector2 index;//索引
+    public Vector3 position;//世界坐标位置
+    public GameObject prefab;//图片
+    public Transform parent;
+    public Grid(Vector2 index,Vector3 position,Transform parent)
     {
-        
+        this.index = index;
+        this.position = position;
+        this.parent = parent;
+        Init();
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Init()
     {
-        
+        GameObject r = GameObject.Instantiate(prefab,position,Quaternion.identity,parent);
     }
 }
