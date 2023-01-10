@@ -13,15 +13,18 @@ public enum GridState
     /// </summary>
     NoOccupied
 }
+[System.Serializable]
 /// <summary>
 /// 网格
 /// </summary>
 public class Grid
 {
+    public float sideLength = 1;
     public Vector2 index;//索引
     public Vector3 position;//世界坐标位置
     public GameObject prefab;//图片
     public Transform parent;
+    public GridState gridState;
     public Grid(Vector2 index,Vector3 position,Transform parent)
     {
         this.index = index;
@@ -31,6 +34,7 @@ public class Grid
     }
     public void Init()
     {
-        GameObject r = GameObject.Instantiate(prefab,position,Quaternion.identity,parent);
+        prefab = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/FloorTe"),position,Quaternion.identity,parent);
+        //prefab.GetComponent<Tile>().gridInfo = this;
     }
 }

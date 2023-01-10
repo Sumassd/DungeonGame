@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Random Dungeon",
-    "\\Random Dungeon\\Assets",
-    "\\Random Dungeon\\Assets\\Scripts"
+    "\\Random Dungeon\\Dungeon",
+    "\\Random Dungeon\\Dungeon\\Assets",
+    "\\Random Dungeon\\Dungeon\\Assets\\Scripts"
   ],
-  "SelectedNode": "\\Random Dungeon\\Assets\\Scripts\\Grid.cs",
+  "SelectedNode": "\\Random Dungeon\\Dungeon\\Assets\\Scripts\\SingleTile.cs",
   "PreviewInSolutionExplorer": false
 }
