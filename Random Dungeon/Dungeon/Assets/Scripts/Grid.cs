@@ -34,7 +34,7 @@ public class Grid
     }
     public void Init()
     {
-        prefab = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/FloorTe"),position,Quaternion.identity,parent);
-        //prefab.GetComponent<Tile>().gridInfo = this;
+        prefab = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/FloorTile"),position,Quaternion.identity,parent);
+        prefab.GetComponent<Tile>().gridInfo = this;
     }
 }

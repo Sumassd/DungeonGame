@@ -29,17 +29,6 @@ public class SingleTile : MonoBehaviour
     {
         Init();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     /// <summary>
     /// 设置单个tile状态为装载东西
     /// </summary>

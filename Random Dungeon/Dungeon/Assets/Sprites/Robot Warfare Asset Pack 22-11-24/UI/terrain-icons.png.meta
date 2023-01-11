@@ -1,12 +1,108 @@
 fileFormatVersion: 2
 guid: 6399fc593facfdf429a4ab91553b5ac8
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8554865315043603188
+    second: terrain-icons_0
+  - first:
+      213: -1586147146182681126
+    second: terrain-icons_1
+  - first:
+      213: 8593775986086841602
+    second: terrain-icons_2
+  - first:
+      213: -206841445307810867
+    second: terrain-icons_3
+  - first:
+      213: -3368100573939025811
+    second: terrain-icons_4
+  - first:
+      213: 463694710019873093
+    second: terrain-icons_5
+  - first:
+      213: 4938778581983689910
+    second: terrain-icons_6
+  - first:
+      213: 8001520177436879295
+    second: terrain-icons_7
+  - first:
+      213: 4354169801083239090
+    second: terrain-icons_8
+  - first:
+      213: 4314959659611535643
+    second: terrain-icons_9
+  - first:
+      213: 1564255669411517289
+    second: terrain-icons_10
+  - first:
+      213: 3402780912244006491
+    second: terrain-icons_11
+  - first:
+      213: 79494758542069140
+    second: terrain-icons_12
+  - first:
+      213: 4360217282484906006
+    second: terrain-icons_13
+  - first:
+      213: -4696182538313369630
+    second: terrain-icons_14
+  - first:
+      213: 166374520684800843
+    second: terrain-icons_15
+  - first:
+      213: 2744410284465469601
+    second: terrain-icons_16
+  - first:
+      213: -3303515733792350910
+    second: terrain-icons_17
+  - first:
+      213: 8668210438060067905
+    second: terrain-icons_18
+  - first:
+      213: 4437360799011794465
+    second: terrain-icons_19
+  - first:
+      213: -5781455256993443347
+    second: terrain-icons_20
+  - first:
+      213: -508184074283803810
+    second: terrain-icons_21
+  - first:
+      213: -6914155158176642826
+    second: terrain-icons_22
+  - first:
+      213: 517833869463840929
+    second: terrain-icons_23
+  - first:
+      213: 8704517021160320752
+    second: terrain-icons_24
+  - first:
+      213: -688090305244768820
+    second: terrain-icons_25
+  - first:
+      213: 56576395816955005
+    second: terrain-icons_26
+  - first:
+      213: 3422302301907959899
+    second: terrain-icons_27
+  - first:
+      213: -527493788176180538
+    second: terrain-icons_28
+  - first:
+      213: -6652778948100907481
+    second: terrain-icons_29
+  - first:
+      213: -3256207969324297214
+    second: terrain-icons_30
+  - first:
+      213: 936052068172927624
+    second: terrain-icons_31
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -32,27 +128,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
-  spriteExtrude: 1
+  spriteMode: 2
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -73,13 +169,205 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: terrain-icons_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d04835253074980800000000000000
+      internalID: -8554865315043603188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-icons_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add1846039fdcf9e0800000000000000
+      internalID: -1586147146182681126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-icons_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d0df14ab9334770800000000000000
+      internalID: 8593775986086841602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-icons_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb79972dc6212df0800000000000000
+      internalID: -206841445307810867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-icons_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68339a7f5a1241d0800000000000000
+      internalID: -3368100573939025811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-icons_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54956fac1ef5f6600800000000000000
+      internalID: 463694710019873093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-icons_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcf17b14f01a8440800000000000000
+      internalID: 4938778581983689910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-icons_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb9ee3f153c1b0f60800000000000000
+      internalID: 8001520177436879295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ec79d0a84928b414c92134e9f0ec6f75
     internalID: 0
     vertices: []
     indices: 

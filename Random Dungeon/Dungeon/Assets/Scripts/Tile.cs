@@ -21,11 +21,7 @@ public class Tile : MonoBehaviour
     private void Awake()
     {
         GetChildren();
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log(transform.GetChild(2).name);  
+        SetTileType(TileType.Floor);
     }
     /// <summary>
     /// 获取子对象上的SingleTile
@@ -49,14 +45,17 @@ public class Tile : MonoBehaviour
             case TileType.Floor:
                 currentTileType = TileType.Floor;
                 gridInfo.gridState = GridState.NoOccupied;
+                SetSingleSelf(0);
                 break;
             case TileType.Wall:
                 currentTileType = TileType.Wall;
                 gridInfo.gridState = GridState.Occupied;
+                SetSingleSelf(1);
                 break;
             case TileType.Door:
                 currentTileType = TileType.Door;
                 gridInfo.gridState = GridState.Occupied;
+                SetSingleSelf(2);
                 break;
             default:
                 break;
@@ -88,5 +87,23 @@ public class Tile : MonoBehaviour
     public TileType GetCurrentTileType()
     {
         return currentTileType;
+    }
+    /// <summary>
+    /// 仅设置一个子物体开启
+    /// </summary>
+    /// <param name="index"></param>
+    public void SetSingleSelf(int index)
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            if (i == index)
+            {
+                singleTileList[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                singleTileList[i].gameObject.SetActive(false);
+            }
+        }
     }
 }
