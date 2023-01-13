@@ -50,11 +50,14 @@ TagManager:
   - name: Door
     uniqueID: 4285602249
     locked: 0
-  - name: Enemy
-    uniqueID: 1444245527
+  - name: SecondUI
+    uniqueID: 443681097
     locked: 0
   - name: Squad
     uniqueID: 7059829
+    locked: 0
+  - name: Enemy
+    uniqueID: 1444245527
     locked: 0
   - name: Player
     uniqueID: 2055056497

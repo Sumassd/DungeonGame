@@ -85,8 +85,33 @@ public class GenerateMap : MonoBehaviour
         {
             result = null;
         }
-        Debug.Log(distance);
+        //Debug.Log(distance);
         //Debug.Log(result.position);
         return result;
+    }
+    /// <summary>
+    /// 返回索引为(0,0)的MapGrid
+    /// </summary>
+    /// <returns></returns>
+    public MapGrid FirstMapGrid()
+    {
+        return mapGrids[0, 0];
+    }
+    /// <summary>
+    /// 获取指定索引的MapGrid,未找到返回(0,0)的MapGrid;
+    /// </summary>
+    /// <param name="x"></param>
+    /// <param name="y"></param>
+    /// <returns></returns>
+    public MapGrid GetPointMapGrid(int x,int y)
+    {
+        if (mapGrids[x,y]!=null)
+        {
+            return mapGrids[x, y];
+        }
+        else
+        {
+            return mapGrids[0, 0];
+        }
     }
 }

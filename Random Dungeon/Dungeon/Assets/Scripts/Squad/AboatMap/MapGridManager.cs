@@ -16,13 +16,17 @@ public class MapGridManager : MonoBehaviour
     /// 当前鼠标所指MapGrid
     /// </summary>
     public MapGrid CurrentMousePointMapGrid { get {
-            if (currentMousePointMapGrid==null)
+            if (currentMousePointMapGrid!=null)
+            {
+                return currentMousePointMapGrid;
+            }
+            else if(lastMousePointMapGrid!=null)
             {
                 return lastMousePointMapGrid;
             }
             else
             {
-                return currentMousePointMapGrid;
+                return GenerateMap._Ins.FirstMapGrid();
             }
         } }
     private MapGrid lastMousePointMapGrid;
